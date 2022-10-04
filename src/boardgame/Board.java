@@ -4,14 +4,14 @@ public class Board {
 
     //Attributes
     private int rows;
-    private int columms;
+    private int columns;
     private Piece[][] pieces;
 
     //Constructors
-    public Board(int rows, int columms) {
+    public Board(int rows, int columns) {
         this.rows = rows;
-        this.columms = columms;
-        pieces = new Piece[rows][columms];
+        this.columns = columns;
+        pieces = new Piece[rows][columns];
     }
 
     //Getters and Setters
@@ -23,11 +23,20 @@ public class Board {
         this.rows = rows;
     }
 
-    public int getColumms() {
-        return columms;
+    public int getColumns() {
+        return columns;
     }
 
-    public void setColumms(int columms) {
-        this.columms = columms;
+    public void setColumns(int columns) {
+        this.columns = columns;
+    }
+
+    //Methods
+    public Piece piece(int row, int column){
+        return pieces[row][column];
+    }
+
+    public Piece piece(Position position){
+        return pieces[position.getRow()][position.getColumn()];
     }
 }

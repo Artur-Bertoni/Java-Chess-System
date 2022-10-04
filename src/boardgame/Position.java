@@ -4,12 +4,12 @@ public class Position {
 
     //Attributes
     private int row;
-    private int columm;
+    private int column;
 
     //Constructors
-    public Position(int row, int columm) {
+    public Position(int row, int column) {
         this.row = row;
-        this.columm = columm;
+        this.column = column;
     }
 
     //Getters and Setters
@@ -21,17 +21,17 @@ public class Position {
         this.row = row;
     }
 
-    public int getColumm() {
-        return columm;
+    public int getColumn() {
+        return column;
     }
 
-    public void setColumm(int columm) {
-        this.columm = columm;
+    public void setColumn(int column) {
+        this.column = column;
     }
 
     //Methods
     @Override
     public String toString(){
-        return row + ", " + columm;
+        return row + ", " + column;
     }
 }
