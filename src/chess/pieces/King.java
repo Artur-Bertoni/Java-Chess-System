@@ -14,6 +14,6 @@ public class King extends ChessPiece {
     //Methods
     @Override
     public String toString(){
-        return "♚";
+        return "K";
     }
 }
